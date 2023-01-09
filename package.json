@@ -1,0 +1,20 @@
+{
+  "name": "webscapping",
+  "version": "1.0.0",
+  "description": "web scrapping with puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "saif"
+  ],
+  "author": "saif shaikh",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^19.4.1",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-recaptcha": "^3.6.6"
+  }
+}
