@@ -1,6 +1,15 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs/promises");
+const express = require("express");
+// const app = express();
 
+// app.get("/songs",(req,res)=>{
+
+//     res.sendFile('index.html', { root: __dirname });
+// });
+// app.listen(5000,()=>{
+//     console.log("app listining at 5000");
+// });
 const delay = (milliseconds) =>
   new Promise((resolve) => setTimeout(resolve, milliseconds));
 
@@ -318,10 +327,10 @@ const fileName=[
 ];
 //****Rename the File name in the Disk****/
 
-// for( let name of fileName){
-//   console.log(name.name);
-//   fs.rename(`${name.id}`, `${name.name}.m4a`, function(err) {
-//       if ( err ) console.log('ERROR: ' + err);
-//     });
-// }
+for( let name of fileName){
+  console.log(name.name);
+  fs.rename(`${name.id}`, `${name.name}.m4a`, function(err) {
+      if ( err ) console.log('ERROR: ' + err);
+    });
+}
 
